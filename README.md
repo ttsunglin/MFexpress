@@ -1,2 +1,2 @@
 # MFexpress
-shiny app for macropahge expression quik search
+shiny app for macropahge expression quick search
