@@ -7,8 +7,7 @@ This app is now available at
 https://ttsunglin.shinyapps.io/MFexpress/
 
                                 
-This shiny app is for gene  
-expression quick search of MFs  
+This shiny app is for gene expression quick search of MFs  
                                  
 This is a online shiny app version. For detail information, please see in lab R project version.
 
