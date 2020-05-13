@@ -3,8 +3,7 @@ shiny app for macropahge expression quick search
 developed 2020.05.10 by Tsai, Tsung-Lin
 
 
-This app is now available at
-
+This app is now available at  
 https://ttsunglin.shinyapps.io/MFexpress/
 
                                 
