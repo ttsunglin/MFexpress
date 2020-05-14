@@ -1,5 +1,5 @@
 # MFexpress
-shiny app for macropahge expression quick search
+shiny app for macropahge expression quick search  
 developed 2020.05.10 by Tsai, Tsung-Lin ttsunglin@gmail.com
 
 
