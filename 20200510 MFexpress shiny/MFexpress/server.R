@@ -81,7 +81,7 @@ ENTREZCONVERT <- function(x){
     doc <- read_html(url)           #node of ID in interest, found with SelectorGaget in Chrome
     
     node <- '//*[contains(concat( " ", @class, " " ), concat( " ", "ncbi-doc-id", " " ))]//li'
-    html_node <- html_nodes(doc, xpath = node)      #note the url 
+    html_node <- html_nodes(doc, xpath = node)      
     html_catch <- html_text(html_node)
     
     node_n <- '//*[contains(concat( " ", @class, " " ), concat( " ", "highlight", " " ))]'
@@ -90,31 +90,33 @@ ENTREZCONVERT <- function(x){
     
     if(identical(html_catch, character(0)) == TRUE){
       
-      node <- '//*[contains(concat( " ", @class, " " ), concat( " ", "geneid", " " ))]'
-      html_node <- html_nodes(doc, xpath = node)      
-      html_catch <- html_text(html_node)
-      
-      node_n <- '//*[contains(concat( " ", @class, " " ), concat( " ", "gn", " " ))]'
-      html_node_n <- html_nodes(doc, xpath = node_n)      #output name #
-      html_catch_n <- html_text(html_node_n)}
-    
-    if(identical(html_catch, character(0)) == TRUE){
-      
       node <- '//*[contains(concat( " ", @class, " " ), concat( " ", "ncbi-doc-id", " " ))]//li'
       html_node <- html_nodes(doc, xpath = node)      
       html_catch <- html_text(html_node)
       
       node_n <- '//*[contains(concat( " ", @class, " " ), concat( " ", "rprt", " " )) and (((count(preceding-sibling::*) + 1) = 1) and parent::*)]//a'
-      html_node_n <- html_nodes(doc, xpath = node_n)      #output name #tim4
+      html_node_n <- html_nodes(doc, xpath = node_n)      
       html_catch_n <- html_text(html_node_n)
     }
     
-    if(as.character(html_catch_n[1]) == "Mus musculus"){
+    if(identical(html_catch, character(0)) == TRUE){
       
-      node_n <- '//*[contains(concat( " ", @class, " " ), concat( " ", "rprt", " " )) and (((count(preceding-sibling::*) + 1) = 1) and parent::*)]//a'
+      node <- '//*[contains(concat( " ", @class, " " ), concat( " ", "geneid", " " ))]'
+      html_node <- html_nodes(doc, xpath = node)      
+      html_catch <- html_text(html_node)
+      
+      node_n <- '//*[contains(concat( " ", @class, " " ), concat( " ", "gn", " " ))]'
       html_node_n <- html_nodes(doc, xpath = node_n)      
-      html_catch_n <- html_text(html_node_n)
-      
+      html_catch_n <- html_text(html_node_n)}
+    
+    if(is.na(html_catch_n[1]) == FALSE) {
+      if(as.character(html_catch_n[1]) == "Mus musculus"){
+        
+        node_n <- '//*[contains(concat( " ", @class, " " ), concat( " ", "rprt", " " )) and (((count(preceding-sibling::*) + 1) = 1) and parent::*)]//a'
+        html_node_n <- html_nodes(doc, xpath = node_n)      
+        html_catch_n <- html_text(html_node_n)
+        
+      }
     }
     
     if(identical(html_catch, character(0)) == TRUE){
@@ -122,7 +124,6 @@ ENTREZCONVERT <- function(x){
       out_id <- NULL
       out_name <- NULL
       message(paste("input error", "input gene symbol unmatched", sep=": "))
-      #ncbi node check end
       
     }else{
       
@@ -140,10 +141,6 @@ ENTREZCONVERT <- function(x){
       out_name <- html_catch_n[1]   
       
     }
-    
-    
-    
-    #output name #hif
     
   }else if(class(x) == "numeric"){
     
