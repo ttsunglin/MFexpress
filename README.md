@@ -1,6 +1,6 @@
 # MFexpress
 shiny app for macropahge expression quick search
-developed 2020.05.10 by Tsai, Tsung-Lin
+developed 2020.05.10 by Tsai, Tsung-Lin ttsunglin@gmail.com
 
 
 This app is now available at  
