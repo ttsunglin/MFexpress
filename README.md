@@ -20,6 +20,6 @@ last updated:
 2020.05.10 Developed by Tsai,Tsung-Lin 
 2020.05.12 loading bar added. code improvement  
 2020.05.13 Device detection added (mobile detection method from https://github.com/g3rv4/mobileDetect)  
-2020.05.14 error code improvement
+2020.05.14 error code improvement  
 2020.05.15 "tim4","sod","tnf" error fixed
 
