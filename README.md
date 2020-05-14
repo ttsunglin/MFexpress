@@ -11,7 +11,7 @@ This shiny app is for gene expression quick search of MFs
 Now the boxplot fits to mobile and PC automatically  
 The app allows input of gene symbol and Entrez id, and most of the gene alias.  
                                  
-This is a online shiny app version. For detail information, please contact the author or see in-lab R project version.  
+This is an online shiny app version. For detail information, please contact the author or see in-lab R project version.  
 
 Dataset includes:  
 tsm_gene (tissue resident macropahges, ImmGen, GSE122108)  
