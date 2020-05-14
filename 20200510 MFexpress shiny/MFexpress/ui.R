@@ -24,7 +24,7 @@ shinyUI(
       
       textInput("Gene", "Please enter gene symbol or Entrez ID", "ENT3"),
       actionButton("enter", "Express !"),
-      helpText("Last updated by TTL 2020.05.13 Now the app automatically fits the device.")
+      helpText("If showing unmatched, try the official gene symbol. Last updated by TTL 2020.05.14")
       
     ),
     
