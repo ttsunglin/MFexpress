@@ -7,14 +7,16 @@ This app is now available at
 https://ttsunglin.shinyapps.io/MFexpress/
 
                                 
-This shiny app is for gene expression quick search of MFs  
+This shiny app is for gene expression quick search of MFs
+Now the boxplot fits to mobile and PC automatically  
+The app allows input of gene symbol and Entrez id, and most of the gene alias.  
                                  
-This is a online shiny app version. For detail information, please see in lab R project version.
+This is a online shiny app version. For detail information, please contact the author or see in-lab R project version.
 
 Dataset includes:  
-tsm_gene (default, tissue resident macropahge, ImmGen)  
-m1m2_gene (M1, M2 data from Abhishek K. Jha, et al. Immunity(2015))  
-lact_gene (LPS treated macrophage from Di Zhang, et al. Nature(2019)).  
+tsm_gene (tissue resident macropahges, ImmGen, GSE122108)  
+m1m2_gene (M1, M2 data from Abhishek K. Jha, et al. Immunity(2015), GSE53053)  
+lact_gene (LPS treated macrophage from Di Zhang, et al. Nature(2019), GSE115354).  
 
 last updated:  
 2020.05.10 Developed by Tsai,Tsung-Lin 
