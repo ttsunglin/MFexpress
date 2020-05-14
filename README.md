@@ -1,17 +1,17 @@
 # MFexpress
 shiny app for macropahge expression quick search  
-developed 2020.05.10 by Tsai, Tsung-Lin ttsunglin@gmail.com
+developed 2020.05.10 by Tsai, Tsung-Lin ttsunglin@gmail.com  
 
 
 This app is now available at  
-https://ttsunglin.shinyapps.io/MFexpress/
+https://ttsunglin.shinyapps.io/MFexpress/  
 
                                 
-This shiny app is for gene expression quick search of MFs
+This shiny app is for gene expression quick search of MFs  
 Now the boxplot fits to mobile and PC automatically  
 The app allows input of gene symbol and Entrez id, and most of the gene alias.  
                                  
-This is a online shiny app version. For detail information, please contact the author or see in-lab R project version.
+This is a online shiny app version. For detail information, please contact the author or see in-lab R project version.  
 
 Dataset includes:  
 tsm_gene (tissue resident macropahges, ImmGen, GSE122108)  
