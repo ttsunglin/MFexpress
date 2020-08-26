@@ -1,5 +1,5 @@
 # MFexpress
-shiny app for macropahge expression quick search  
+shiny app for macrophage expression quick search  
 developed 2020.05.10 by Tsai, Tsung-Lin ttsunglin@gmail.com  
 
 
@@ -14,7 +14,7 @@ The app allows input of gene symbol and Entrez id, and most of the gene alias.
 This is an online shiny app version. For detail information, please contact the author or see in-lab R project version.  
 
 Dataset includes:  
-tsm_gene (tissue resident macropahges, ImmGen, GSE122108)  
+tsm_gene (tissue resident macrophages, ImmGen, GSE122108)  
 m1m2_gene (M1, M2 data from Abhishek K. Jha, et al. Immunity(2015), GSE53053)  
 lact_gene (LPS treated macrophage from Di Zhang, et al. Nature(2019), GSE115354).  
 
