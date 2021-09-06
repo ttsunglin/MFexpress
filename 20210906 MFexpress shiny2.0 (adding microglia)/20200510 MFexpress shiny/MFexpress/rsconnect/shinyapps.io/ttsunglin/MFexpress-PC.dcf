@@ -1,0 +1,12 @@
+name: MFexpress-PC
+title: MFexpress-PC
+username:
+account: ttsunglin
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2275023
+bundleId: 3139132
+url: https://ttsunglin.shinyapps.io/MFexpress-PC/
+when: 1589317394.17515
+asMultiple: FALSE
+asStatic: FALSE

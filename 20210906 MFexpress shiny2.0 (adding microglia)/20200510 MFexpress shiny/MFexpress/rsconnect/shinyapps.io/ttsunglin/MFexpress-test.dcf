@@ -1,0 +1,12 @@
+name: MFexpress-test
+title: MFexpress-test
+username:
+account: ttsunglin
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2287736
+bundleId: 3138919
+url: https://ttsunglin.shinyapps.io/MFexpress-test/
+when: 1589314755.88889
+asMultiple: FALSE
+asStatic: FALSE
